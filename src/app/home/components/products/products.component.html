@@ -1,0 +1,33 @@
+<div class="main-product-container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" *ngFor="let product of productStoreItem.products$ | async">
+            <div class="product-card">
+
+            
+        <div class="product-image-container position-relative">
+                <img [src]="'../../../../assets/images/'+ product.display_img_url" alt="product">
+                <div class="img-tag position-absolute  rounded-pill text-dark" *ngIf="product.quantity === 0">
+                    <span>Out of stock</span>
+                </div>
+                <div class="img-tag position-absolute  rounded-pill text-dark" *ngIf="product.quantity !== 0 && product.quantity <= product.low_quantity">
+                   <span class="demand-text">On high demand</span>
+                    <span>Only {{product.quantity}} left</span>
+                </div>
+        </div>
+        <div class="product-info">
+            <h5>
+                {{product.name}}
+            </h5>
+            <p class="product-points">{{product.points}} points</p>
+           <hr/>
+           <div class="product-valid-container" *ngIf="product.valid_until">
+            <label for=""> Valid Until :</label> <span> {{product.valid_until}}</span>
+           </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div *ngIf="!productStoreItem.products.length">
+        No Product Found
+    </div>
+</div>

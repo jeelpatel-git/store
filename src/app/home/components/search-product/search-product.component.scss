@@ -1,0 +1,46 @@
+.search-container {
+  margin-top: 1.5em;
+    background-color: #f8f9ff;
+  
+    .search-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar {
+      position: relative;
+      margin-bottom: 20px;
+  
+      input {
+        width: 100%;
+        padding: 10px 40px; // Adjust padding to make space for the icon
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+      }
+  
+      .search-icon {
+        position: absolute;
+        left: 15px; // Position the icon on the left
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        font-size: 16px;
+      }
+    }
+  
+    
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar {
+      input {
+        font-size: 14px;
+        padding: 8px 35px; // Adjust padding for smaller screens
+      }
+    }
+
+  }
+  

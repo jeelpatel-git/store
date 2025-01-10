@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="applied-filters">
+                <span>Applied Filters:</span>
+                <div class="filter-tags">
+                  <span class="filter-tag">
+                    e-Voucher
+                    <button class="remove-btn">✕</button>
+                  </span>
+                  <span class="filter-tag">
+                    Clear Filters
+                    <button class="remove-btn">✕</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            </div>
+        
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4">
+            <app-sidenavigation></app-sidenavigation>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8">
+          <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                <p class="product-count">{{productsStoreItem.products.length}} Results Found</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+                <div class="btns d-flex justify-content-end">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sort</button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel">Filter By</h5>
+                      <button class="btn-close text-reset" data-bs-dismiss="offcanvas" (click)="clearFilter()">Reset All</button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <h6>Sort</h6>
+                      <div class="btn-group">
+                        <button class="sort-button"  [ngClass]="{ selected: isAToZSelected }"
+                        (click)="selectAToZ()">A to Z</button>
+                        <button class="sort-button"  [ngClass]="{ selected: isZToASelected }"
+                        (click)="selectZToA()">Z to A</button>
+                       
+                      </div>
+                    </div>
+
+                    <div class="offcanvas-footer">
+                      <button (click)="applySelection()" data-bs-dismiss="offcanvas" class="apply-button">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+              <app-products></app-products>
+        </div>
+    </div>
+</div>

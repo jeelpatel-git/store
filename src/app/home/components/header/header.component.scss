@@ -1,0 +1,30 @@
+
+.header {
+    max-width: 100%;
+    box-shadow: 5px 5px 20px gray;
+    overflow: hidden;
+    background-color: #ff0000;
+    .navbar-nav {
+            li {
+                padding: 0.2em 1em;
+                a{
+                    color: #fff;
+                }
+        }
+        .user-img {
+            width: 25px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.brand {
+    color: #fff;
+    margin-left: 2%;
+    padding: 0.8em;
+    width: 23%;
+}
+
+
+
+

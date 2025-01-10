@@ -1,0 +1,25 @@
+#footer {
+    border-top: 1px solid lightgray;
+    padding: 0.5em;
+    .footer-box-container {
+        margin-bottom: 0.5em;
+
+        .footer-box-head {
+            font-size: 1.5em;
+            color: #000000;
+            margin-bottom: 0.2em;
+        }
+
+        ul.footer-menu {
+            padding-left: 0px;
+            li{
+                list-style: none;
+                margin-bottom: 0.2em;
+                a {
+                    text-decoration: none;
+                    color: #ada9a9;
+                }
+            }
+        }
+    }
+}

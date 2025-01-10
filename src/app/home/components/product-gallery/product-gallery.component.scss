@@ -1,0 +1,115 @@
+.applied-filters {
+    font-size: 16px;
+
+    span {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .filter-tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+
+      .filter-tag {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+
+        .remove-btn {
+          margin-left: 8px;
+          background: none;
+          border: none;
+          color: #999;
+          font-size: 14px;
+          cursor: pointer;
+
+          &:hover {
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+
+  p.product-count{
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: blue;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid lightgray;
+  h5 {
+    margin: 0;
+  }
+  .btn-close{
+    background: no-repeat;
+    color: orange !important;
+    width: 5em;
+    font-weight: bold;
+    opacity: 1;
+  }
+}
+
+.offcanvas-footer {
+  padding: 1em;
+  border-top: 1px solid lightgray;
+  .apply-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+
+.sort-button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  background: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sort-button.selected {
+  background-color: #ff0019;
+  color: #fff;
+}
+
+
+
+
+
+  @media (max-width: 768px) {  
+    .applied-filters {
+      font-size: 14px;
+  
+      .filter-tags {
+        flex-wrap: wrap;
+        gap: 5px;
+  
+        .filter-tag {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {  
+    .product-count {
+      margin-top: 20px;
+    }
+  }
+
+  

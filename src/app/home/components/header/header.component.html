@@ -1,0 +1,42 @@
+<nav class="navbar header navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+       <h1> Store</h1>
+      </a>
+  
+      <!-- Toggler Button for Small Screens -->
+      <button
+        class="navbar-toggler"  
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item" >
+            <a href="javascript:void(0)" class="position-relative"><fa-icon  [icon]="faBell"></fa-icon>
+            
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                  12
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+           <a href="javascript:void(0)"> <fa-icon  [icon]="faGlobe"></fa-icon></a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)"><img class="user-img" [src]="userImage" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
