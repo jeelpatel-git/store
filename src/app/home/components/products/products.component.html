@@ -5,7 +5,8 @@
 
             
         <div class="product-image-container position-relative">
-                <img [src]="'../../../../assets/images/'+ product.display_img_url" alt="product">
+                
+            <img [src]="getProductImage(product)" alt="product">
                 <div class="img-tag position-absolute  rounded-pill text-dark" *ngIf="product.quantity === 0">
                     <span>Out of stock</span>
                 </div>

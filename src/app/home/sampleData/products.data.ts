@@ -50,7 +50,7 @@ export const ProductsData:Product[] =[
         pk:6,
         name:"Hand Wash",
         points:370,
-        display_img_url:"product-1.jpg",
+        display_img_url:"",
         quantity:10,
         valid_until:"11-12-2024",
         low_quantity:5
