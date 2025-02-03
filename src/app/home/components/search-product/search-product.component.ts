@@ -10,7 +10,7 @@ import { debounceTime, Subject } from 'rxjs';
 export class SearchProductComponent implements OnInit {
   faSearch = faSearch;
   searchSubject = new Subject<string>(); // Use string for better type safety
-  debouncerTime = 3000;
+  debouncerTime = 4000;
   
   @Output() searchEvent = new EventEmitter<string>();
 
