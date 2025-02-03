@@ -18,4 +18,13 @@ export class HomeComponent {
         }
       });
   }
+
+  getSearchProduct(event:any) {
+    //console.log(event.target.value);
+    if(event!= "") {
+      this.productsStoreItem.getProductsBySearch(event);
+    } else {
+      this.productsStoreItem.loadProducts();
+    }
+  }
 }

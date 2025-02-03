@@ -33,6 +33,16 @@ export class ProductStoreItem extends StoreItem<Product[]> {
         });
     }
 
+    async getProductsBySearch(productName:any) {
+        this.ProductService.getProductList().subscribe((products) => {
+            const searchProducts: any[] = Array.isArray(this.filteredProducts)
+  ? this.filteredProducts.filter((product: any) => product.name === productName)
+  : [];
+            console.log(searchProducts)
+            this.setValue(searchProducts);
+        });
+    }
+
     get products$(): Observable<Product[]> {
         return this.value$;
     }

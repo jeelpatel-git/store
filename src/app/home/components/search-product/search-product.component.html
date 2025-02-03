@@ -1,11 +1,12 @@
 <section id="search">
     <div class="container">
-        <div class="search-container">
-            <h2 class="search-title">Search</h2>
-            <div class="search-bar">
-                <fa-icon [icon]="faSearch" class="search-icon"></fa-icon>
-              <input type="text" placeholder="Search" />
-            </div>
+      <div class="search-container">
+        <h2 class="search-title">Search</h2>
+        <div class="search-bar">
+          <fa-icon [icon]="faSearch" class="search-icon"></fa-icon>
+          <input type="text" placeholder="Search" (input)="searchProduct($event)" />
+        </div>
+      </div>
     </div>
-    </div>
-</section>
+  </section>
+  
